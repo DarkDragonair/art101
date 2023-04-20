@@ -1,9 +1,32 @@
-/* Here we can set styles for this lab page that we don't want to effect others pages */
+h1 {
+  font-size: 250%;
+}
 
-/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
-.minor-section {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
-  }
+#index-0, #index-3, #site-0, #site-3, #structure {
+  font-size: 80%;
+}
+
+#index-0 {
+  max-height: 750px;
+  max-width: 900px;
+}
+
+#index-3 {
+  max-height: 700px;
+  max-width: 850px;
+}
+
+#site-0 {
+  max-height: 750px;
+  max-width: 1000px;
+}
+
+#site-3 {
+  max-height: 700px;
+  max-width: 850px;
+}
+
+#structure {
+  max-height: 600px;
+  max-width: 200px;
+}
