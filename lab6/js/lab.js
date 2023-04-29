@@ -1,21 +1,29 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+/* 
+lab.js - Arrays and Objects
+Summary.
+- Practice arrays and objects.
+Description.
+- Declaring and printing variables of various data types in relation to modes of transportation and a car.
+Author: Jessica Jorgensen
+Date: 4/28/23
+*/
 
-// Constants
-
-// Functions
-
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
+// Variable Declaration
+// Array
+var myTransport = ["Shuttle", "Walk"];
+// Object
+var myMainRide = {
+  make: "Volkswagen",
+  model: "Polo",
+  color: "White",
+  year: 2009,
+  ownIt: false,
+  // Function, used for calculation
+  age: function() {
+      return 2023 - this.year;
+  }
 }
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
-
-// let's get this party started
-main();
+document.writeln("Modes of transportation: " + myTransport[0] + ", " + myTransport[1] + "." + "<br>");
+document.writeln("Car: <pre>", 
+    JSON.stringify(myMainRide, null, '\t'), "</pre>");
