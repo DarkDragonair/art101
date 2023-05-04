@@ -7,7 +7,6 @@ Description.
 Author: Jessica Jorgensen
 Date: X/X/23
 */
-
 // Constants
 
 // Functions

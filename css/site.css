@@ -18,6 +18,11 @@ h1 {
   word-spacing: 5px;
 }
 
+h4 {
+  background-color: #6082B6;
+  font-size: 125%;
+}
+
 #content {
   background-color: #6082B6;
   border: dotted 6px #B6D0E2;

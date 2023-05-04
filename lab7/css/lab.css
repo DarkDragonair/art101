@@ -1,9 +1,14 @@
-/* Here we can set styles for this lab page that we don't want to effect others pages */
+h1 {
+  font-size: 250%;
+}
 
-/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
-.minor-section {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
-  }
+/* Max dimensions for all screenshots. */
+#hub, #index-7, #local-7, #script, #site-7 {
+  max-height: 700px;
+  max-width: 850px;
+}
+
+/* Differentiating the JavaScript output from the rest of results by use of font. */
+.output {
+  font-family: 'Courier New', Courier, monospace;
+}
