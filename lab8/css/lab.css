@@ -3,7 +3,7 @@ h1 {
 }
 
 /* Max dimensions for all screenshots. */
-#console {
+#console, #hub, #index-8, #local-8, #script, #site-8 {
   max-height: 700px;
   max-width: 850px;
 }

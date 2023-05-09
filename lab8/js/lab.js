@@ -1,27 +1,33 @@
 /* 
-lab.js - X
+lab.js - Anon Functions and Callbacks
 Summary.
 - .
 Description.
 - .
 Author: Jessica Jorgensen
-Date: X/X/23
+Date: 5/7/23
 */
 
-// Constants
+// Variable Declaration
+var array = [2, 4, 6, 8];
+console.log("Array: ", array)
 
-// Functions
+// Function Declaration
+// Math function that returns the square of a number, or rather the number times itself.
+function squareNumber(x) {
+  return x * x;
+};
 
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
-}
+// Test calls of the function.
+console.log("2^2: ", squareNumber(2));
+console.log("4^2: ", squareNumber(4));
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
+// Returning the square of Array array.
+var firstResult = array.map(squareNumber);
+console.log("Array squared: ", firstResult);
 
-// let's get this party started
-main();
+// Returning the squareroot of the array.
+var secondResult = array.map(function(x) {
+  return Math.sqrt(x);
+});
+console.log("Array squareroot: ", secondResult);
