@@ -1,9 +1,9 @@
 /* 
 lab.js - Anon Functions and Callbacks
 Summary.
-- .
+- Practicing anonymous functions and callbacks through the use of JavaScript.
 Description.
-- .
+- Transferrance from the JavaScript console to a file, experiementing with variables used for the math of square and square root.
 Author: Jessica Jorgensen
 Date: 5/7/23
 */
