@@ -1,65 +1,79 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Lab X - X</title>
+	<title>Lab 9 - JavaScript for the Web</title>
   	<meta charset="UTF-8" />
   	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" type="text/css" href="../css/site.css">
 	<link rel="stylesheet" type="text/css" href="css/lab.css">
 	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-	<script type="text/javascript" src="./js/lab.js" DEFER></script>
+	<!--Task 1: Create an index.html for Lab 9-->
+	<script src="js/lab.js" defer></script>
 </head>
 <body>
 	<main id="content">
 		<section>
-			<!--.-->
-			<h1>Lab X: X</h1>
+			<!--Task 1: Create an index.html for Lab 9-->
+			<h1>Lab 9: JavaScript for the Web</h1>
 
 			<h2>Challenge</h2>
-			<p>.</p>
+			<p>To modify HTML and CSS elements of the page through JavaScript.</p>
 
 			<h2>Problems</h2>
-			<p>.</p>
+			<p>Initially, I was not aware that putting something into a div or paragraph while also trying to add or modify elements from the JavaScript would cause only what was written down in HTML to show. So, when I realized the issue, I made all affected div/paragraphs empty.</p>
 
 			<h2>Results</h2>
-			<p>.</p>
+			<!--Task X: Bonus!-->
+			<p id="results"></p>
 
-			<!--.-->
-			<img id="console" src="img/console.png">
-			<p>.</p>
+			<!--Task 1: Create an index.html for Lab 9-->
+			<div id="output"></div>
 
-			<!--.-->
-			<img id="script" src="img/script.png">
-			<p>.</p>
+			<!--Task 1: Create an index.html for Lab 9-->
+			<img id="index-9" src="img/index-9-1.png">
+			<img id="index-9" src="img/index-9-2.png">
+			<p>The index.html for Lab 9, this time having various paragraphs and a link taken on by the JavaScript via empty ids. Otherwise features the same format and more images of documentation courtesy of extra tasks.</p>
 
-			<!--.-->
-			<h4>JavaScript Output</h4>
-			<div class="output">
-				<script src="js/lab.js"></script>
-			</div>
-			<p>.</p>
+			<!--Task 2: Create a JavaScript file-->
+			<img id="script" src="img/script-1.png">
+			<img id="script" src="img/script-2.png">
+			<p id="caption"></p>
 
-			<!--.-->
-			<img id="index-6" src="img/index-6.png">
-			<p>.</p>
+			<!--Task 3: Test, Debug, and Upload-->
+			<img id="local-9" src="img/local-9.png">
+			<p>Lab 9's page, as seen from the local side. It has the Challenge / Problems / Results format, but various elements have been changed. A total of 5 div/ids were referenced and 7 new elements were created, all of which are avaliable to view in the console.</p>
 
-			<!--.-->
-			<img id="css-6" src="img/css-6.png">
-			<p>.</p>
+			<!--Task 3: Test, Debug, and Upload-->
+			<img id="site-9" src="img/site-9.png">
+			<p>The published site of Lab 9. Bears no errors and all changed elements from the JavaScript file are able to be viewed in the console.</p>
 
-			<!--.-->
-			<img id="local-6" src="img/local-6-1.png">
-			<img id="local-6" src="img/local-6-2.png">
-			<p>.</p>
+			<!--Task X: Bonus!-->
+			<img id="append" src="img/append-1.png">
+			<img id="append" src="img/append-2.png">
+			<img id="append" src="img/append-3.png">
+			<img id="append" src="img/append-4.png">
+			<img id="append" src="img/append-5.png">
+			<img id="append" src="img/append-6.png">
+			<img id="append" src="img/append-7.png">
+			<p>The first bonus task. In the standard format of retrieving and modifying elements from an id, applying those elements to it requires the function appendChild(). What this does is take the elemental node assigned to the variable and place it directly into the structure of the DOM, whether it is from a div or a paragraph. More specifically, it places the node into the last slot. To reverse that, then, requires the use of prepend(). This function does the exact opposite - it places the node before the first element of the list. So that's why even though new4El is declared and modified first, new5El is the one that is displayed both in the HTML and in the console first.</p>
+			
+			<!--Task X: Bonus!-->
+			<p>Links:</p>
 
-			<!--.-->
-			<img id="hub" src="img/hub-1.png">
-			<img id="hub" src="img/hub-2.png">
-			<p>.</p>
+			<p id="num"></p>
 
-			<!--.-->
-			<img id="site-6" src="img/site-6.png">
-			<p>.</p>
+			<p>Document Element:</p>
+
+			<p id="doc"></p>
+
+			<!--Task X: Bonus!-->
+			<img id="document" src="img/document-1.png">
+			<img id="document" src="img/document-2.png">
+			<img id="document" src="img/document-3.png">
+			<img id="document" src="img/document-4.png">
+			<img id="document" src="img/document-5.png">
+			<p>Task X's second option. Experimented with two methods outside of the scope of appendChild(), createElement(), and getElementById(). Normally, these would be used with the script tag inside of the HTML, as that method of retrieval is faster, however I was able to implement both of them inside the JavaScript file instead using the same methods as elements. Namely, the innerHTML was changed to reflect the prompt given to them. One was returning the document element, which in this case was HTML. The other, meanwhile, was to return the number of links on the index.html - as it was retrieved from the bottom of the page, the number came out to eight.</p>
+
 		</section>
 		<h3>Links</h3>
 		<nav id="links">
@@ -68,8 +82,9 @@
 			<li><a href="../lab3/index.html">Lab 3: File Structures</a></li>
 			<li><a href="../lab4/index.html">Lab 4: Pseudocode and Problem-Solving</a></li>
 			<li><a href="../lab5/index.html">Lab 5: Data Types and Variables</a></li>
-			<li><a href="../lab5/index.html">Lab 6: Arrays and Objects</a></li>
-			<li><a href="../lab5/index.html">Lab 7: Arrays and Objects</a></li>
+			<li><a href="../lab6/index.html">Lab 6: Arrays and Objects</a></li>
+			<li><a href="../lab7/index.html">Lab 7: Functions</a></li>
+			<li><a href="../lab8/index.html">Lab 8: Anon Functions and Callbacks</a></li>
 		</nav>
 	</main>
 </body>

@@ -3,12 +3,12 @@ h1 {
 }
 
 /* Max dimensions for all screenshots. */
-#console {
+#hub, #index-9, #local-9, #script, #site-9 #append, #document, #element  {
   max-height: 700px;
   max-width: 850px;
 }
 
 /* Differentiating the JavaScript output from the rest of results by use of font. */
-.output {
+#output {
   font-family: 'Courier New', Courier, monospace;
 }
