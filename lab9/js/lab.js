@@ -39,7 +39,7 @@ new2El.innerHTML = "New task: review JavaScript.";
 new2El.setAttribute("href", "js/lab.js");
 
 // - Adding HTML text
-new3El.innerHTML = "Lab 9's JavaScript file as of [Task 2]. Features the changing of element color (CSS), links (HTML), style (CSS), and text (HTML) through multiple variables.";
+new3El.innerHTML = "Lab 9's JavaScript file. Features the changing of element color (CSS), links (HTML), style (CSS), and text (HTML) through multiple variables.";
 
 new4El.innerHTML = "Including this one!";
 new5El.innerHTML = "Several parts about the page have been altered from the usual format.";
