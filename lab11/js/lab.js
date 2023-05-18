@@ -1,7 +1,7 @@
 /* 
 lab.js - Libraries & jQuery
 Summary.
-- To use jQuery in order to override <div>s into Buttons, as well as to u
+- To use jQuery in order to override <div>s into Buttons, as well as to use those buttons to change other elements of the page.
 Description.
 - Allow jQuery to override <div>s into Buttons as well as on click to add a Class on top of three other Classes.
 Author: Jessica Jorgensen
