@@ -1,0 +1,14 @@
+h1 {
+  font-size: 250%;
+}
+
+/* Max dimensions for all screenshots. */
+#hub, #index, #local, #script, #site {
+  max-height: 800px;
+  max-width: 900px;
+}
+
+/* Differentiating the JavaScript output from the rest of results by use of font. */
+#my-button, #output, #user-name {
+  font-family: 'Courier New', Courier, monospace;
+}
