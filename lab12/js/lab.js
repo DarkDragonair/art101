@@ -22,20 +22,20 @@ function sortingHat(str) {
   var mod = length % 4;
 
   // Nest
-  // - A mod of 0 will return the string Gryffindor.
+  // - A mod of 0 will return the House name and description.
   if (mod == 0) {
-    return "Gryffindor";
+    return ["Gryffindor", "With a color scheme of scarlet and gold, Gryffindor represents those that are chivalrous and valorous. A lion is the House's animal."];
   }
   // - Else if, in the case that it is not of the previous value(s).
   else if (mod == 1) {
-    return "Ravenclaw";
+    return ["Ravenclaw", "Those in Ravenclaw display a need to learn and sharpness, portrayed by an eagle. Their house colors are blue and bronze."];
   }
   else if (mod == 2) {
-    return "Slytherin";
+    return ["Slytherin", "Clothed in green and silver, Slytherin's students are exemplary cases of ambition and craftiness - best represented by a snake."];
   }
-  // - The final else if is not needed, because the only other Integer that could be declared after the previous statements is 3.
+  // - The final else if is not needed, because the only other Integer that could be declared after not being 0, 1, or 2 is 3.
   else {
-    return "Hufflepuff";
+    return ["Hufflepuff", "Hardworking and loyal to a fault, the House of Hufflepuff is always willing to lend others a hand. Their yellow and black color scheme is accented by their animal being a badger."];
   }
 }
 
@@ -48,12 +48,14 @@ buttonName.addEventListener("click", function() {
   console.log("Entered name: ", name);
 
   // - Set equal to the result of sortingHat() using name.
-  var house = sortingHat(name);
+  var house = sortingHat(name)[0];
+  var description = sortingHat(name)[1];
   console.log("Assigned House: ", house);
+  console.log("House Description: ", description);
 
   // - Statement of the chosen House.
-  var sortText = "<p>The Sorting Hat has sorted you into " + house + ".<br>";
+  var result = "<p>The Sorting Hat has sorted you into " + house + ".<br>" + "<p>" + description;
 
   // Assigns the HTML of the <div> "output" as the result of sortingHat().
-  document.getElementById("output").innerHTML = sortText;
+  document.getElementById("output").innerHTML = result;
 })
