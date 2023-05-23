@@ -1,53 +1,59 @@
 /* 
-lab.js - JavaScript Events and Forms
+lab.js - Conditionals
 Summary.
-- To utilize an input field and button with a sort function.
+- Practicing conditionals (nested statements, particularly if-else's) by way of sorting Hogwarts Houses.
 Description.
-- Use the HTML, CSS, and JavaScript lifted from Lab 7 and 9, in the form of functions and elements, then combine them with events and forms to output a sorted user-inputted text.
+- Use a button, a function with conditionals, and an event listener to sort a user-inputted name into a Hogwarts House, returning that to the site.
 Author: Jessica Jorgensen
-Date: 05/15/23
+Date: 05/22/23
 */
 
 // Variable Declaration
-var buttonEl = document.getElementById("my-button");
+// - Element "button" assigned to a variable.
+var buttonName = document.getElementById("button");
 
 // Function Declaration
-// Record a user-inputted name in a String, transfer contents to an Array, sort the Array, and return the contents to a String.
-function arrangeName(userName) {
-  // Declaration: Variable, Array.
-  // Splitting characters of an Array, transferred from a String.
-  var userArray = userName.split('');
-  console.log("userArray: ", userArray);
+// - A simple function that takes a string, uses modulus, and returns a Hogwarts House's name.
+function sortingHat(str) {
+  // Variable Declaration - Function  
+  // - Taking the length of the inputted String.
+  var length = str.length;
+  // - Modulus of 4 affecting length. Will be 0, 1, 2, or 3.
+  var mod = length % 4;
 
-  // Declaration: Variable, Array.
-  // Array characters are sorted.
-  var sortedArray = userArray.sort();
-  console.log("arrangedArrary: ", sortedArray);
-
-  // Declaration: Variable, String.
-  // Transfer contents to String.
-  var nameSorted = sortedArray.join('');
-  console.log("nameSorted: ", nameSorted);
-
-  // Return the now-sorted String.
-  return nameSorted;
+  // Nest
+  // - A mod of 0 will return the string Gryffindor.
+  if (mod == 0) {
+    return "Gryffindor";
+  }
+  // - Else if, in the case that it is not of the previous value(s).
+  else if (mod == 1) {
+    return "Ravenclaw";
+  }
+  else if (mod == 2) {
+    return "Slytherin";
+  }
+  // - The final else if is not needed, because the only other Integer that could be declared after the previous statements is 3.
+  else {
+    return "Hufflepuff";
+  }
 }
 
-// Event - Declaration and Function
-// When clicking buttonEl
-buttonEl.addEventListener('click', function() {
-  // Gets the value of the inputted name.
-  var userInput = document.getElementById("user-name").value;
+// Event Listener
+// - On button click, runs sortingHat() and 
+buttonName.addEventListener("click", function() {
+  // Variable Declaration - Function
+  // - Allocate the inputted name from the user.
+  var name = document.getElementById("input").value;
+  console.log("Entered name: ", name);
 
-  // Creates a new element.
-  var userOutput = document.createElement("p");
+  // - Set equal to the result of sortingHat() using name.
+  var house = sortingHat(name);
+  console.log("Assigned House: ", house);
 
-  // HTML is changed to the resulted call of arrangedName(), with the parameter being the inputted name by the user.
-  userOutput.innerHTML = "Arranged name: " + arrangeName(userInput);
+  // - Statement of the chosen House.
+  var sortText = "<p>The Sorting Hat has sorted you into " + house + ".<br>";
 
-  // Appended to the file to save changes.
-  document.getElementById("output").appendChild(userOutput);
-
-  // Copied the userOutput to console to use for debugging purposes.
-  console.log("Button arranged name: ", userOutput);
+  // Assigns the HTML of the <div> "output" as the result of sortingHat().
+  document.getElementById("output").innerHTML = sortText;
 })
