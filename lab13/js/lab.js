@@ -1,53 +1,65 @@
 /* 
-lab.js - JavaScript Events and Forms
+lab.js - Loops
 Summary.
-- To utilize an input field and button with a sort function.
+- .
 Description.
-- Use the HTML, CSS, and JavaScript lifted from Lab 7 and 9, in the form of functions and elements, then combine them with events and forms to output a sorted user-inputted text.
+- .
 Author: Jessica Jorgensen
 Date: 05/15/23
 */
 
 // Variable Declaration
-var buttonEl = document.getElementById("my-button");
+// - 
+var results = "";
 
 // Function Declaration
-// Record a user-inputted name in a String, transfer contents to an Array, sort the Array, and return the contents to a String.
-function arrangeName(userName) {
-  // Declaration: Variable, Array.
-  // Splitting characters of an Array, transferred from a String.
-  var userArray = userName.split('');
-  console.log("userArray: ", userArray);
+// - 
+function fizzBuzz() {
+  // For Loop
+  // - 
+  for (var i=1; i<=200; i++) {
+    //
+    if (i % 105 == 0) {
+      results += i + " FizzBuzzBoom!<br>";
+      console.log(i + " FizzBuzzBoom!");
+    }
+    //
+    else if (i % 35 == 0) {
+      results += i + " BuzzBoom!<br>";
+      console.log(i + " BuzzBoom!");
+    }
+    //
+    else if (i % 21 == 0) {
+      results += i + " FizzBoom!<br>";
+      console.log(i + " FizzBoom!");
+    }
+    //
+    else if (i % 15 == 0) {
+      results += i + " FizzBuzz!<br>";
+      console.log(i + " FizzBuzz!");
+    }
+    //
+    else if (i % 7 == 0) {
+      results += i + " Boom!<br>";
+      console.log(i + " Boom!");
+    }
+    else if (i % 5 == 0) {
+      results += i + " Buzz!<br>";
+      console.log(i + " Buzz!");
+    }
+    else if (i % 3 == 0) {
+      results += i + " Fizz!<br>";
+      console.log(i + " Fizz!");
+    }
+    else {
+      results += i + "<br>";
+      console.log(i);
+    }
+  }
 
-  // Declaration: Variable, Array.
-  // Array characters are sorted.
-  var sortedArray = userArray.sort();
-  console.log("arrangedArrary: ", sortedArray);
-
-  // Declaration: Variable, String.
-  // Transfer contents to String.
-  var nameSorted = sortedArray.join('');
-  console.log("nameSorted: ", nameSorted);
-
-  // Return the now-sorted String.
-  return nameSorted;
+  //
+  $("#output").html(results);
 }
 
-// Event - Declaration and Function
-// When clicking buttonEl
-buttonEl.addEventListener('click', function() {
-  // Gets the value of the inputted name.
-  var userInput = document.getElementById("user-name").value;
-
-  // Creates a new element.
-  var userOutput = document.createElement("p");
-
-  // HTML is changed to the resulted call of arrangedName(), with the parameter being the inputted name by the user.
-  userOutput.innerHTML = "Arranged name: " + arrangeName(userInput);
-
-  // Appended to the file to save changes.
-  document.getElementById("output").appendChild(userOutput);
-
-  // Copied the userOutput to console to use for debugging purposes.
-  console.log("Button arranged name: ", userOutput);
-})
+// Call Function
+fizzBuzz();

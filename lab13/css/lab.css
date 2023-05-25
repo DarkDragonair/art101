@@ -9,6 +9,6 @@ h1 {
 }
 
 /* Differentiating the JavaScript output from the rest of results by use of font. */
-#my-button, #output, #user-name {
+#output {
   font-family: 'Courier New', Courier, monospace;
 }
