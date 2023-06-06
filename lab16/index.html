@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Lab 15 - AJAX</title>
+	<title>Lab 16 - JSON and APIs</title>
   	<meta charset="UTF-8" />
   	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" type="text/css" href="../css/site.css">
@@ -14,46 +14,38 @@
 	<main id="content">
 		<section>
 			<!--Task 1: Create an index.html for your lab-->
-			<h1>Lab 15: AJAX</h1>
+			<h1>Lab 16: JSON and APIs</h1>
 
 			<h2>Challenge</h2>
-			<p>To utilize AJAX in order to take API from a website and import it to ours.</p>
+			<p>Use both JSON and API in order to take data from an endpoint and put it on a page.</p>
 
 			<h2>Problems</h2>
-			<p>As she was less experienced at coding, my partner ended up taking longer to understand the code and how to implement it. It took more time on both of our ends for communication, research, and testing. That being said, it was still completed eventually.</p>
+			<p>Had to install CORS Unblock in order to test locally, due it throwing a block error. Additionally had to seperate title and alt attributes from image, displaying them all seperately, in order for the image to load.</p>
 
 			<h2>Results</h2>
-			<p>Click the button below to show the AJAX implementation.</p>
+			<p>The title, image, and alt for XKCD's comic "Marble Run" is shown below.</p>
 
 			<!--Task 1: Create an index.html for your lab-->
 			<h4>JavaScript Output</h4>
-			<li><a href="js/lab.js">JavaScript File</a></li><br>
-			<button id="activate">Activate</button>
+			<li><a href="js/lab.js">JavaScript File</a></li>
 			<div id="output"></div>
 			<br>
 
-			<!--Task 1: Create an index.html for your lab-->
-			<img id="index" src="img/index.png">
-			<p>Lab 15's index.html file. Features standard formatting, JavaScript file link, a button, and a div, along with additional documentation with captions.</p>
-
-			<!--Task 2: Test your API endpoint-->
+			<!--Task 3: Test Your API Endpoint-->
 			<img id="api" src="img/api.png">
-			<p>The test of the external website's API.</p>
+			<p>Endpoint data shown in Chrome. It includes data that would transfer into comicObj.</p>
 
-			<!--Task 3: Use AJAX to get info from external source-->
-			<img id="local" src="img/local.png">
-			<p>Website's local page viewing. On button click, it displays a yes/no answer accompanied by a GIF.</p>
-
-			<!--Task 3: Use AJAX to get info from external source-->
+			<!--Task 4: Create a JavaScript file-->
 			<img id="script" src="img/script.png">
-			<p>The JavaScript coding; a function uses AJAX in order to retrieve data from an API and appends it onto div #output once the button #activate is pressed.</p>
+			<p>The JavaScript used for Lab 16, a combination of the provided recipe and what was used in Lab 15. Notably, $.ajax provides three pieces of data (title, image, attributes), which is then transferred into #output.</p>
 
-			<img id="hub" src="img/hub.png">
-			<p>GitHub's display of most of the coding and image changes necessary for the lab.</p>
+			<!--Task 5: Test, Debug, Upload-->
+			<img id="local" src="img/local.png">
+			<p>Local test of the HTML and JavaScript. Displays the title, image, and alt of XKCD's comic "Marble Run".</p>
 
 			<!--Task 4: Test, Debug, and Upload-->
 			<img id="site" src="img/site.png">
-			<p>Lab 15's webpage, live on the internet. The on-click successfully triggers each time.</p>
+			<p>The live site of Lab 16 page. It mirrors the local page and throws no errors.</p>
 		</section>
 		<h3>Links</h3>
 		<nav id="links">
@@ -71,7 +63,7 @@
 			<li><a href="../lab12/index.html">Lab 12: Conditionals</a></li>
 			<li><a href="../lab13/index.html">Lab 13: Loops</a></li>
 			<li><a href="../lab14/index.html">Lab 14: Debugging Tools & Strategies</a></li>
-			<li><a href="../lab16/index.html">Lab 16: JSON and APIs</a></li>
+			<li><a href="../lab15/index.html">Lab 15: AJAX</a></li>
 		</nav>
 	</main>
 </body>
